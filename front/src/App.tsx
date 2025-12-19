@@ -1,17 +1,18 @@
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import './App.css'
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import '../src/css/reset.css'
+import '../src/css/style.css'
+import '../src/App.css'
+import '../src/index.css'
 import Home_kr from './pages/Home_kr'
-import Root from './pages/Root'
-function App() {
-    const router:any = createBrowserRouter([{
-        path:"/",
-        element:<Root/>,
-        children :[
-          {path:'/', element :<Home_kr/>}
-        ]
-      }])
 
-  return <RouterProvider router={router}/>
+function App() {
+  return(
+     <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home_kr/>}/>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App

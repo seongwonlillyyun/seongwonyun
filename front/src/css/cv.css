@@ -1,0 +1,29 @@
+.cv_content{
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #CCC1BD;
+}
+h2{
+    font-size: 30px;
+    color: black;
+}
+.cv_title{
+    margin-bottom: 20px;
+}
+
+.cv_notice{
+    margin-top: 20px;
+}
+.cv_btn button{
+    background: #FCC0C5;
+    color: #5A2E32;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+.cv_btn button:hover{
+    border: 2px solid #E8A2A8;
+}
+.cv_btn button:focus{
+    border: 2px solid #E8A2A8;
+}

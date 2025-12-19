@@ -1,0 +1,105 @@
+
+.profile_pic{
+    width: 400px ;
+    border-radius: 50%;
+}
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.introduction{
+    width: 800px;
+}
+.intro_hi{
+    margin-bottom: 20px;
+    color: black;
+}
+h2{
+    font-size: 30px;
+}
+.intro_content{
+    font-size: 18;
+}
+.intro_sns{
+    margin: 10px auto;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.intro_sns li button{
+    width: 45px;
+    font-size: 35px;
+}
+.aboutme_edu{
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #CCC1BD;
+    color: black;
+}
+.edu_content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+ 
+}
+.edu_cirlist{
+    width: 5px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+.edu_cir{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+.cirone{
+    position: absolute;
+    right:0px;
+    transform: translateX(10px);
+}
+.cirtwo{
+    position: absolute;
+    top:45%;
+    right:0px;
+    transform: translateX(10px);
+}
+.cirthree{
+    position: absolute;
+    bottom: 0%;
+    right:0px;
+    transform: translateX(10px);
+}
+.edu_schoollist{
+    text-align: left;
+    position: relative;
+    margin-left: 10px;
+    width: 700px;
+}
+.edu_school{
+    font-size: 22px;
+    font-weight: 600;
+}
+.edu_schoolone{
+    position: absolute;
+    transform: translateY(-62px);
+}
+.edu_schooltwo{
+    position: absolute;
+    transform: translateY(25px);
+}
+.edu_schoolthree{
+    position: absolute;
+    transform: translateY(112px);
+}
+.edu_three_activity{
+    transform: translateY(150px);
+}
+.edu_three_one{
+    margin: 5px 0;
+}

@@ -1,0 +1,14 @@
+.research_content{
+    margin-top: 160px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: 1px solid #CCC1BD;
+}
+h2{
+    font-size: 30px;
+    color: black;
+}
+.research_img{
+    width: 400px;
+    margin: 20px auto;
+}

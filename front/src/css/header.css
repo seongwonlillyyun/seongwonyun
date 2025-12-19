@@ -1,0 +1,17 @@
+#header{
+    width: 100%;
+}
+.header_list{
+  border-bottom: 1px solid #CCC1BD;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header_link{
+    font-size: 20px;
+    margin: auto;
+}
+.header_name{
+    margin-right: 200px;
+}

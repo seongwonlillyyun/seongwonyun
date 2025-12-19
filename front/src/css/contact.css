@@ -1,0 +1,62 @@
+.contact_content{
+    margin: 50px 0;
+    padding: 20px 0;
+    border-top: 1px solid #CCC1BD;
+}
+.contact_sendingbox{
+    background-color: #F7EDEF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 500px;
+    
+}
+.contact_name, .contact_email {
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #FFF8F9;
+    border: none;
+    color: #333
+}
+.contact_message{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #FFF8F9;
+    border: none;
+    color: #333
+}
+.contact_sendbtn button{
+    background: #FCC0C5;
+    color: #5A2E32;
+    width: 90px;
+    height: 40px;
+}
+.contact_sendbtn button:hover{
+    border: 2px solid #E8A2A8;
+}
+.contact_sendbtn button:focus{
+    border: 2px solid #E8A2A8;
+}
+input{
+    padding-left: 10px;
+     
+}
+textarea{
+    resize: none;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+input::placeholder, textarea::placeholder{
+    color: #B88C91;
+    padding-left: 5px;
+    font-size: 15px;
+}
+input:focus {
+    border-color: #FCC0C5;
+    outline: none;
+}
