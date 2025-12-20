@@ -7,7 +7,7 @@ import Home_kr from './pages/Home_kr'
 
 function App() {
   return(
-     <BrowserRouter>
+     <BrowserRouter basename="/seongwonyun">
       <Routes>
         <Route path='/' element={<Home_kr/>}/>
       </Routes>
