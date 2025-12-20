@@ -3,8 +3,9 @@ import '../css/home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faNotion} from '@fortawesome/free-brands-svg-icons';
+import {link} from '../function/Button';
+
 const Aboutme = () => {
-    
 return(
     <>
     <div>
@@ -22,8 +23,8 @@ return(
                 <li>
                   <ul className='intro_sns'>
                     <li><button><FontAwesomeIcon icon={faEnvelopeOpen} /></button></li>
-                    <li><button><FontAwesomeIcon icon={faLinkedin} /></button></li>
-                    <li><button><FontAwesomeIcon icon={faNotion} /></button></li>
+                    <li><button onClick={()=>link('https://www.linkedin.com/in/seongwon-yun-3a7148109')}><FontAwesomeIcon icon={faLinkedin} /></button></li>
+                    <li><button onClick={()=>link('https://www.notion.so/seongwonlillyyun/Seongwon-Lilly-Yun-270c7a81531044bfbccb635df5911e18?source=copy_link')}><FontAwesomeIcon icon={faNotion} /></button></li>
                   </ul>
                 </li>
             </ul>
