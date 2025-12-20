@@ -12,3 +12,17 @@ h2{
     width: 400px;
     margin: 20px auto;
 }
+@media (max-width: 768px) {
+  .research_content{
+    margin-top: 100px;
+}
+    .research_content h2{
+        font-size: 20px;
+    }
+    .research_content p{
+        font-size: 12px;
+    }
+.research_img{
+    width: 90%;
+}
+}

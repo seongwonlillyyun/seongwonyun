@@ -44,7 +44,6 @@ h2{
     justify-content: center;
     align-items: center;
     gap: 45px;
- 
 }
 .edu_cirlist{
     width: 5px;
@@ -102,4 +101,180 @@ h2{
 }
 .edu_three_one{
     margin: 5px 0;
+}
+/* 반응형 */
+/* 태블릿 */
+@media (max-width: 1024px) {
+ .aboutme{
+    display: block;
+ }
+ .profile_pic{
+    width: 400px;
+    margin: 0 auto;
+ }
+ .introduction{
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+ }
+ .intro_sns{
+    margin: 30px auto;
+}
+.edu_content{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+.edu_schoollist{
+    text-align: left;
+    width: 620px;
+}
+.edu_school p{
+    font-size: 20px;
+}
+}
+/* 모바일 */
+@media (max-width: 768px) {
+    .profile_pic{
+    max-width: 100%;
+}
+    h1{
+        font-size: 30px;
+    }
+    .intro_content{
+    font-size: 15px;
+}
+.intro_sns li button{
+    font-size: 25px;
+}
+.aboutme_edu li h2{
+    font-size: 20px;
+}
+  .edu_content{
+    display: flex; 
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 5px;
+    
+}
+.edu_cirlist{
+    width: 5px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    transform: translateX(5px);
+}
+.edu_cir{
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50%;
+}
+.cirone{
+    position: absolute;
+    right:0px;
+    top:0%;
+    transform: translate(4px, -5px)
+}
+.cirtwo{
+    position: absolute;
+    top:45%;
+    right:0px;
+    transform: translate(4px, 1px);
+}
+.cirthree{
+    position: absolute;
+    bottom: 0%;
+    right:0px;
+    transform: translate(4px, 1px);
+}
+.edu_schoollist{
+    width: 100%;
+    text-align: left;
+}
+.edu_school{
+    display: inline-block;
+    word-break: break-word; /* 긴 단어도 줄바꿈 */
+    white-space: normal; /* 기본 줄바꿈 허용 */
+}
+.edu_school p{
+    font-size: 14px;
+    max-width: 100%;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.edu_schoolone{
+    position: absolute;
+    transform: translateY(-65px);
+}
+.edu_schooltwo{
+    position: absolute;
+    transform: translateY(9px);
+}
+.edu_schoolthree{
+    position: absolute;
+    transform: translateY(80px);
+}
+.edu_three_activity{
+    transform: translateY(125px);
+}
+.edu_three_activity{
+    font-size: 9px;
+    margin: 1px 0;
+}
+}
+@media (max-width: 320px) {
+     .profile_pic{
+    max-width: 90%;
+}
+    h1{
+        font-size: 23px;
+    }
+    .intro_content{
+    font-size: 14px;
+}
+  .edu_content{
+    margin-top: 30px;
+    display: flex;
+    gap: 0px;
+    width: 100%;
+}
+.edu_cirlist{
+    width: 2px;
+    height: 80px;
+}
+.edu_cir{
+    width: 6px;
+    height: 6px;
+}
+.cirone, .cirtwo, .cirthree{
+    transform: translateX(2px);
+}
+.edu_schoolcontent{
+    min-width: 0;
+}
+.edu_schoollist{
+    width: 100%;
+}
+.edu_school p{
+    font-size: 12px;
+    font-weight: 500;
+}
+.edu_schoolone{
+    transform: translateY(-28px);
+}
+.edu_schooltwo{
+    transform: translateY(7px);
+}
+.edu_schoolthree{
+    transform: translateY(44px);
+}
+.edu_three_activity{
+    transform: translateY(57px);
+}
+.edu_three_activity{
+    font-size: 6px;
+}
 }

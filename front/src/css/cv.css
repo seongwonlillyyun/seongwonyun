@@ -27,3 +27,16 @@ h2{
 .cv_btn button:focus{
     border: 2px solid #E8A2A8;
 }
+@media (max-width: 768px) {
+  .cv_title h2{
+    font-size:20px;
+    }
+    .cv_btn button{
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+}
+.cv_notice{
+    font-size: 12px;
+}
+}

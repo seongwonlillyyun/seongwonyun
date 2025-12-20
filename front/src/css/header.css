@@ -1,17 +1,48 @@
 #header{
     width: 100%;
 }
+.header_container{
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .header_list{
   border-bottom: 1px solid #CCC1BD;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
 }
 .header_link{
     font-size: 20px;
-    margin: auto;
+    margin: 0;
 }
-.header_name{
-    margin-right: 200px;
+
+/* 모바일 쿼리 */
+
+@media (max-width: 768px) {
+  .header_container {
+   padding: 0;
+  }
+  .header_list{
+  border-bottom: 1px solid #CCC1BD;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  padding-bottom: 15px !important;
+}
+  .header_link a{
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+.header_list{
+  padding: 0px 10px;
+}
+   .header_link a{
+    font-size: 10px;
+  
+  }
 }

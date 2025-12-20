@@ -42,7 +42,7 @@ return(
                           <li className='edu_cir cirthree'></li>
                         </ul>
                       </li>
-                      <li>
+                      <li className='edu_schoolcontent'>
                         <ul className='edu_schoollist'>
                           <li className='edu_school edu_schoolone'><p>연세대학교 독어독문학과 석사 재학 (2026.03 ~ 2028.02)</p></li>
                           <li className='edu_school edu_schooltwo'><p>서울대학교 언어교육원 한국어 교원 양성과정 수료 (2026.01 ~ 2026.02)</p></li>
