@@ -3,7 +3,7 @@ import '../src/css/reset.css'
 import '../src/css/style.css'
 import '../src/App.css'
 import '../src/index.css'
-import Home_kr from './pages/Home_kr'
+import Home_kr from './pages/Home'
 
 function App() {
   return(

@@ -6,7 +6,7 @@ const Toggle = () => {
 
 return(
     <>
-        <div className={`toggle_container ${lang === 'eng'? "on":''}`}>
+        <div className={`toggle_container ${lang === 'en'? "on":''}`}>
             <button className='toggle_switch' onClick={togglelang}>{lang.toUpperCase()}</button>
         </div>
     </>

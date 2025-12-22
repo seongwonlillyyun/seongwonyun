@@ -4,6 +4,7 @@ import './index.css'
 import '../src/css/reset.css'
 import '../src/css/style.css'
 import App from './App.tsx'
+import './locales/i18n.ts';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

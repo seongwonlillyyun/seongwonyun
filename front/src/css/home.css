@@ -78,10 +78,10 @@ h2{
     text-align: left;
     position: relative;
     margin-left: 10px;
-    width: 700px;
+    width: 1000px;
 }
 .edu_school{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 .edu_schoolone{
@@ -100,7 +100,7 @@ h2{
     transform: translateY(150px);
 }
 .edu_three_one{
-    margin: 5px 0;
+    margin: px 0;
 }
 /* 반응형 */
 /* 태블릿 */
@@ -124,7 +124,7 @@ h2{
     margin-top: 30px;
     display: flex;
     gap: 15px;
-    width: 100%;
+    
 }
 .edu_schoollist{
     text-align: left;

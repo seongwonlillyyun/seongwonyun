@@ -12,7 +12,7 @@ return(
             <li className='header_link header_cv'><a href='#cv'>CV</a></li>
             <li className='header_link header_research'><a href='#research'>Research</a></li>
             <li className='header_link header_contact'><a href='#contact'>Contact</a></li>
-            <li className='header_link header_button'><button className='engbtn'><Toggle/></button></li>
+            <li className='header_link header_button'><Toggle/></li>
           </ul>
         </div>
       </div>

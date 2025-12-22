@@ -1,0 +1,24 @@
+{
+    "aboutme":{
+        "introgreeting":"Hello, I'm Seongwon Yun!!",
+        "intro":["Driven by my passion for the German language, I chose to pursue a career as a linguist. Currently, I'm doing my master course at Yonsei university.",
+                "Driven by my interest in Korean language education, I completed the Korean Language Teacher Training Program at Seoul National University's Language Education Institute.",
+                "I am a dedicated and hardworking individual who always strives for excellence and gives my absolute best in every task I undertake.",
+                "My research focuses on German linguistics, with a particular interest in German as a Foreign Language (DaF). My ultimate goal is to develop educational models that provide meaningful support to learners of the German language."
+                ],
+        "education":[
+            "M.A. in German Language and Literature, Yonsei University (Expected Mar 2026 – Feb 2028)",
+            "Completed Korean Language Teacher Training Program, Language Education Institute, Seoul National University (Jan 2026 – Feb 2026)",
+            "B.A. in German Language and Literature, Chungbuk National University (Mar 2019 – Feb 2024)"
+        ],
+        "activity":[
+            "Korea Representative for the Goethe-Institut project 'Jugend kocht!' (Aug 2021)",
+            "Exchange Student in Berlin, Germany (Berliner Hochschule für Technik (BHT), 2022.09~2023.02)",
+            "Short-term Exchange Student in London, UK(Regent's university London, 2023.08)"
+        ]
+    },
+    "research":"Research is currently in progress! I will do my best...!!!!",
+    "cv":"Click the button above to view my full CV!",
+    "contactme":"Feel free to contact me",
+    "sendbtn":"send"
+}

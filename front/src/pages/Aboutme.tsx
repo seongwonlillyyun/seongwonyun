@@ -3,9 +3,13 @@ import '../css/home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faNotion} from '@fortawesome/free-brands-svg-icons';
-import {link} from '../function/Button';
+import {link, mail} from '../function/Button';
+import { useTranslation } from 'react-i18next';
 
 const Aboutme = () => {
+  const {t} = useTranslation();
+
+
 return(
     <>
     <div>
@@ -13,16 +17,15 @@ return(
           <li><img src={profile} alt="profile" className='profile_pic' /></li>
           <li>
             <ul className='introduction'>
-              <li className='intro_hi'><h1>안녕하세요, 윤성원입니다! :)</h1></li>
-              <li className='intro_content'><p>독일어가 좋아서 언어학자가 되기로 결심했습니다. 현재 연세대학교 독어독문과에서 석사 과정을 밟고 있습니다.
-                <br/>한국어 교육에도 관심이 있어 서울대학교 언어교육원에서 한국어 교원 양성과정을 수료했습니다.
-                <br/>저는 주어진 일에 최선을 다하고 모든 일을 열심히 수행하며 노력하는 사람입니다.
-                <br/>저의 연구 분야는 독일 어학 분야이며 특히 외국어로서의 독일어에 관심이 많습니다. 외국어로서 독일어를 배우는
-                학습자들에게 도움이 되는 교육 모델을 연구하는 것이 저의 목표입니다.
-                </p></li>
+              <li className='intro_hi'><h1>{t('aboutme.introgreeting')}</h1></li>
+               <li className='intro_content'>
+                {(t('aboutme.intro', { returnObjects: true })as string[]).map((text: string, index: number) => (
+                  <p key={index}>{text}</p>
+              ))}
+              </li>
                 <li>
                   <ul className='intro_sns'>
-                    <li><button><FontAwesomeIcon icon={faEnvelopeOpen} /></button></li>
+                    <li><button onClick={()=>mail()}><FontAwesomeIcon icon={faEnvelopeOpen} /></button></li>
                     <li><button onClick={()=>link('https://www.linkedin.com/in/seongwon-yun-3a7148109')}><FontAwesomeIcon icon={faLinkedin} /></button></li>
                     <li><button onClick={()=>link('https://www.notion.so/seongwonlillyyun/Seongwon-Lilly-Yun-270c7a81531044bfbccb635df5911e18?source=copy_link')}><FontAwesomeIcon icon={faNotion} /></button></li>
                   </ul>
@@ -45,12 +48,12 @@ return(
                       </li>
                       <li className='edu_schoolcontent'>
                         <ul className='edu_schoollist'>
-                          <li className='edu_school edu_schoolone'><p>연세대학교 독어독문학과 석사 재학 (2026.03 ~ 2028.02)</p></li>
-                          <li className='edu_school edu_schooltwo'><p>서울대학교 언어교육원 한국어 교원 양성과정 수료 (2026.01 ~ 2026.02)</p></li>
-                          <li className='edu_school edu_schoolthree'><p>충북대학교 독어독문학과 학사 졸업 (2019.03 ~ 2024.02) </p></li>
-                          <li className='edu_three_activity'><p>괴테 인스티튜트 주최 프로젝트 'Jugend kocht!' 한국대표 참여 (2021.08)</p></li>
-                          <li className='edu_three_activity edu_three_one'><p>독일 베를린 교환학생 (Berliner Hochschule für Technik (BHT), 2022.09~2023.02)</p></li>
-                          <li className='edu_three_activity edu_three_two'><p>영국 런던 단기 교환학생 (Regent's university London, 2023.08) </p></li>
+                          <li className='edu_school edu_schoolone'><p>{t('aboutme.education.0')}</p></li>
+                          <li className='edu_school edu_schooltwo'><p>{t('aboutme.education.1')}</p></li>
+                          <li className='edu_school edu_schoolthree'><p>{t('aboutme.education.2')}</p></li>
+                          <li className='edu_three_activity'><p>{t('aboutme.activity.0')}</p></li>
+                          <li className='edu_three_activity edu_three_one'><p>{t('aboutme.activity.1')}</p></li>
+                          <li className='edu_three_activity edu_three_two'><p>{t('aboutme.activity.2')}</p></li>
                         </ul>
                       </li>
                 </ul>
