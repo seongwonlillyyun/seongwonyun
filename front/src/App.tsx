@@ -1,4 +1,4 @@
-import {HashRouter, Routes, Route} from "react-router-dom"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import '../src/css/reset.css'
 import '../src/css/style.css'
 import '../src/App.css'
@@ -7,11 +7,11 @@ import Home_kr from './pages/Home_kr'
 
 function App() {
   return(
-     <HashRouter>
+     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home_kr/>}/>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
