@@ -1,7 +1,7 @@
 import profile from '../assets/profile.jpg'
 import '../css/home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpen,faUserGraduate,faSchool } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faNotion} from '@fortawesome/free-brands-svg-icons';
 import {link, mail} from '../function/Button';
 import { useTranslation } from 'react-i18next';
@@ -39,18 +39,10 @@ return(
             </li>
             <li>
                 <ul className='edu_content'>
-                    <li>
-                        <ul className='edu_cirlist'>
-                          <li className='edu_cir cirone'></li>
-                          <li className='edu_cir cirtwo'></li>
-                          <li className='edu_cir cirthree'></li>
-                        </ul>
-                      </li>
                       <li className='edu_schoolcontent'>
                         <ul className='edu_schoollist'>
-                          <li className='edu_school edu_schoolone'><p>{t('aboutme.education.0')}</p></li>
-                          <li className='edu_school edu_schooltwo'><p>{t('aboutme.education.1')}</p></li>
-                          <li className='edu_school edu_schoolthree'><p>{t('aboutme.education.2')}</p></li>
+                          <li className='edu_school edu_schoolone'><p><FontAwesomeIcon icon={faSchool} /> {t('aboutme.education.0')}</p></li>
+                          <li className='edu_school edu_schooltwo'><p><FontAwesomeIcon icon={faUserGraduate} /> {t('aboutme.education.1')}</p></li>
                           <li className='edu_three_activity'><p>{t('aboutme.activity.0')}</p></li>
                           <li className='edu_three_activity edu_three_one'><p>{t('aboutme.activity.1')}</p></li>
                           <li className='edu_three_activity edu_three_two'><p>{t('aboutme.activity.2')}</p></li>

@@ -1,6 +1,18 @@
 #header{
     width: 100%;
 }
+.logopic{
+  width: 120px;
+}
+.header_logo{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.logo_title{
+  font-size: 30px;
+  font-weight: 700;
+}
 .header_container{
     margin: 0 auto;
     padding: 0 20px;
@@ -16,6 +28,40 @@
 .header_link{
     font-size: 20px;
     margin: 0;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.mobileNav {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  width: 100%;
+   background-color: rgba(235, 230, 224, 0.8);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+
+  transform: translateY(-10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.mobileNav.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.ham_toggle{
+  margin: 0 auto;
 }
 
 /* 모바일 쿼리 */
@@ -37,6 +83,39 @@
     font-size: 14px;
   }
 }
+
+
+@media (max-width: 426px) {
+  .logopic{
+  width: 80px;
+}
+.header_logo{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-bottom: 1px solid #CCC1BD;
+}
+.logo_title{
+  font-size: 20px;
+  font-weight: 700;
+}
+  .header_list{
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top:20px;
+    right:38px
+  }
+
+
+}
+
+
+
+
+
 @media (max-width: 320px) {
 .header_list{
   padding: 0px 10px;
@@ -44,5 +123,22 @@
    .header_link a{
     font-size: 10px;
   
+  }
+  .logopic{
+  width: 50px;
+}
+.header_logo{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-bottom: 1px solid #CCC1BD;
+}
+.logo_title{
+  font-size: 18px;
+  font-weight: 700;
+}
+.hamburger {
+    top:6px;
+    right:15px
   }
 }

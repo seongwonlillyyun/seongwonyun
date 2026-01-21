@@ -39,68 +39,21 @@ h2{
     color: black;
 }
 .edu_content{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
+margin-top: 20px;
 }
-.edu_cirlist{
-    width: 5px;
-    height: 200px;
-    background-color: black;
-    position: relative;
-}
-.edu_cir{
-    width: 25px;
-    height: 25px;
-    background-color: black;
-    border-radius: 50%;
-}
-.cirone{
-    position: absolute;
-    right:0px;
-    transform: translateX(10px);
-}
-.cirtwo{
-    position: absolute;
-    top:45%;
-    right:0px;
-    transform: translateX(10px);
-}
-.cirthree{
-    position: absolute;
-    bottom: 0%;
-    right:0px;
-    transform: translateX(10px);
-}
+
 .edu_schoollist{
-    text-align: left;
-    position: relative;
-    margin-left: 10px;
-    width: 1000px;
+    display: inline-block;  
 }
-.edu_school{
-    font-size: 20px;
+.edu_school p{
+    font-size: 25px;
     font-weight: 600;
-}
-.edu_schoolone{
-    position: absolute;
-    transform: translateY(-62px);
-}
-.edu_schooltwo{
-    position: absolute;
-    transform: translateY(25px);
-}
-.edu_schoolthree{
-    position: absolute;
-    transform: translateY(112px);
+    text-align: left;
+    margin-bottom: 10px;
+    
 }
 .edu_three_activity{
-    transform: translateY(150px);
-}
-.edu_three_one{
-    margin: px 0;
+    text-align: left;
 }
 /* 반응형 */
 /* 태블릿 */
@@ -120,16 +73,7 @@ h2{
  .intro_sns{
     margin: 30px auto;
 }
-.edu_content{
-    margin-top: 30px;
-    display: flex;
-    gap: 15px;
-    
-}
-.edu_schoollist{
-    text-align: left;
-    width: 620px;
-}
+
 .edu_school p{
     font-size: 20px;
 }
@@ -159,69 +103,12 @@ h2{
     gap: 5px;
     
 }
-.edu_cirlist{
-    width: 5px;
-    height: 150px;
-    background-color: black;
-    position: relative;
-    transform: translateX(5px);
-}
-.edu_cir{
-    width: 13px;
-    height: 13px;
-    background-color: black;
-    border-radius: 50%;
-}
-.cirone{
-    position: absolute;
-    right:0px;
-    top:0%;
-    transform: translate(4px, -5px)
-}
-.cirtwo{
-    position: absolute;
-    top:45%;
-    right:0px;
-    transform: translate(4px, 1px);
-}
-.cirthree{
-    position: absolute;
-    bottom: 0%;
-    right:0px;
-    transform: translate(4px, 1px);
-}
-.edu_schoollist{
-    width: 100%;
-    text-align: left;
-}
-.edu_school{
-    display: inline-block;
-    word-break: break-word; /* 긴 단어도 줄바꿈 */
-    white-space: normal; /* 기본 줄바꿈 허용 */
-}
 .edu_school p{
-    font-size: 14px;
-    max-width: 100%;
-    font-weight: 500;
-    box-sizing: border-box;
+    font-size: 15px;
 }
-.edu_schoolone{
-    position: absolute;
-    transform: translateY(-65px);
-}
-.edu_schooltwo{
-    position: absolute;
-    transform: translateY(9px);
-}
-.edu_schoolthree{
-    position: absolute;
-    transform: translateY(80px);
-}
+
 .edu_three_activity{
-    transform: translateY(125px);
-}
-.edu_three_activity{
-    font-size: 9px;
+    font-size: 11px;
     margin: 1px 0;
 }
 }
@@ -235,46 +122,14 @@ h2{
     .intro_content{
     font-size: 14px;
 }
-  .edu_content{
-    margin-top: 30px;
-    display: flex;
-    gap: 0px;
-    width: 100%;
-}
-.edu_cirlist{
-    width: 2px;
-    height: 80px;
-}
-.edu_cir{
-    width: 6px;
-    height: 6px;
-}
-.cirone, .cirtwo, .cirthree{
-    transform: translateX(2px);
-}
-.edu_schoolcontent{
-    min-width: 0;
-}
 .edu_schoollist{
     width: 100%;
 }
-.edu_school p{
+.edu_school p {
     font-size: 12px;
     font-weight: 500;
 }
-.edu_schoolone{
-    transform: translateY(-28px);
-}
-.edu_schooltwo{
-    transform: translateY(7px);
-}
-.edu_schoolthree{
-    transform: translateY(44px);
-}
 .edu_three_activity{
-    transform: translateY(57px);
-}
-.edu_three_activity{
-    font-size: 6px;
+    font-size: 11px;
 }
 }

@@ -7,5 +7,5 @@ export const mail = ()=>{
 }
 
 export const pdfshowing = () =>{
-    window.open("../public/Seongwon_cv.pdf", "_blank");
+    window.open("/Seongwon_cv.pdf", "_blank");
 }
