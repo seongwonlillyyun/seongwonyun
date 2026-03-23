@@ -3,10 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
-import { useTranslation } from 'react-i18next';
+import { useGooglesheet } from '../function/useGooglesheet';
+import { useLanguagestore } from '../function/LanguageStore';
+
 
 const Contactme = () => {
-    const {t} = useTranslation();
+    const {lang}:{lang:string; togglelang:()=>void} = useLanguagestore();
+    const texts = useGooglesheet();
     const nameRef = useRef<HTMLInputElement>(null);
     const emailRef = useRef<HTMLInputElement>(null);
     const messageRef = useRef<HTMLTextAreaElement>(null);
@@ -72,7 +75,7 @@ return(
     <>
         <ul className='contact_content'>
             <li><h2>CONTACT ME!</h2></li>
-            <li><p>{t('contactme')}</p></li>
+            <li><p>{texts.contactme?.[lang]?.[0]}</p></li>
             <li>
                 <ul className='contact_sendingbox'>
                     <li>
@@ -91,7 +94,7 @@ return(
                         <input type="text" name='company' style={{position:'absolute', left:'-99999px', height:0, overflow:'hidden'}} value={form.company} onChange={handleChange} />
                     </li>
                     <li className='contact_sendbtn'>
-                        <button type='button' onClick={handleSubmit}>{t('sendbtn')}<FontAwesomeIcon icon={faPaperPlane} /></button>
+                        <button type='button' onClick={handleSubmit}>{texts.sendbtn?.[lang]?.[0]}<FontAwesomeIcon icon={faPaperPlane} /></button>
                     </li>
                 </ul>
             </li>

@@ -4,11 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen,faUserGraduate,faSchool } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faNotion} from '@fortawesome/free-brands-svg-icons';
 import {link, mail} from '../function/Button';
-import { useTranslation } from 'react-i18next';
+import { useLanguagestore } from '../function/LanguageStore';
+import { useGooglesheet } from '../function/useGooglesheet';
 
 const Aboutme = () => {
-  const {t} = useTranslation();
 
+const {lang}:{lang:string; togglelang:()=>void} = useLanguagestore();
+const texts = useGooglesheet();
+
+ if (!texts || Object.keys(texts).length === 0) return <div>Loading...</div>;
 
 return(
     <>
@@ -17,12 +21,15 @@ return(
           <li><img src={profile} alt="profile" className='profile_pic' /></li>
           <li>
             <ul className='introduction'>
-              <li className='intro_hi'><h1>{t('aboutme.introgreeting')}</h1></li>
+              <li className='intro_hi'><h1>{texts.introgreeting[lang]}</h1></li>
                <li className='intro_content'>
-                {(t('aboutme.intro', { returnObjects: true })as string[]).map((text: string, index: number) => (
-                  <p key={index}>{text}</p>
-              ))}
-              </li>
+                {Array.isArray((texts.intro as { [key: string]: string[] })[lang])
+                  ? (texts.intro as { [key: string]: string[] })[lang].map((text: string, index: number) => (
+                    <p key={index}>{text}</p>
+                    ))
+                      : null
+                }
+               </li> 
                 <li>
                   <ul className='intro_sns'>
                     <li><button onClick={()=>mail()}><FontAwesomeIcon icon={faEnvelopeOpen} /></button></li>
@@ -41,11 +48,11 @@ return(
                 <ul className='edu_content'>
                       <li className='edu_schoolcontent'>
                         <ul className='edu_schoollist'>
-                          <li className='edu_school edu_schoolone'><p><FontAwesomeIcon icon={faSchool} /> {t('aboutme.education.0')}</p></li>
-                          <li className='edu_school edu_schooltwo'><p><FontAwesomeIcon icon={faUserGraduate} /> {t('aboutme.education.1')}</p></li>
-                          <li className='edu_three_activity'><p>{t('aboutme.activity.0')}</p></li>
-                          <li className='edu_three_activity edu_three_one'><p>{t('aboutme.activity.1')}</p></li>
-                          <li className='edu_three_activity edu_three_two'><p>{t('aboutme.activity.2')}</p></li>
+                          <li className='edu_school edu_schoolone'><p><FontAwesomeIcon icon={faSchool} /> {texts.edu[lang][0]}</p></li>
+                          <li className='edu_school edu_schooltwo'><p><FontAwesomeIcon icon={faUserGraduate} /> {texts.edu[lang][1]}</p></li>
+                          <li className='edu_three_activity'><p>{texts.activity[lang][0]}</p></li>
+                          <li className='edu_three_activity edu_three_one'><p>{texts.activity[lang][1]}</p></li>
+                          <li className='edu_three_activity edu_three_two'><p>{texts.activity[lang][2]}</p></li>
                         </ul>
                       </li>
                 </ul>

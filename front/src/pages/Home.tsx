@@ -5,6 +5,7 @@ import Research from './Research';
 import Contactme from './Contactme';
 import Cvpage from './Cvpage';
 import Footer from './Footer';
+import Projects from './Projects';
 
 const Home_kr = () => {
 return(
@@ -13,6 +14,9 @@ return(
     <main>
       <section id='aboutme'>
         <Aboutme/>
+      </section>
+      <section id='projects'>
+        <Projects/>
       </section>
       <section id='research'>
         <Research/>

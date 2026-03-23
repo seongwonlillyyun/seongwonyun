@@ -19,6 +19,7 @@ return(
           <ul className='header_list'>
             <li className='header_link header_aboutme header_normal'><a href='#aboutme'>About Me</a></li>
             <li className='header_link header_cv header_normal'><a href='#cv'>CV</a></li>
+            <li className='header_link header_project header_normal'><a href='#projects'>Projects</a></li>
             <li className='header_link header_research header_normal'><a href='#research'>Research</a></li>
             <li className='header_link header_contact header_normal'><a href='#contact'>Contact</a></li>
             <li><div className='header_button'><Toggle/></div></li>
@@ -28,6 +29,7 @@ return(
         <nav className={`mobileNav ${isOpen ? "open" : ""}`}>
           <a href='#aboutme' onClick={() => setIsOpen(false)}>About Me</a>
           <a href='#cv' onClick={() => setIsOpen(false)}>CV</a>
+          <a href='#projects' onClick={() => setIsOpen(false)}>Projects</a>
           <a href='#research' onClick={() => setIsOpen(false)}>Research</a>
           <a href='#contact' onClick={() => setIsOpen(false)}>Contact</a>
           <div className='header_button ham_toggle'><Toggle/></div>
