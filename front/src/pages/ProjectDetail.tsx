@@ -23,13 +23,16 @@ const ProjectDetail = () => {
   y: project.chartData.native.F1[i],
 }));
 
+
+
   if (!project) return <div>프로젝트를 찾을 수 없습니다.</div>;
   return (
     <div className="project-detail">
       <h1 className='detail-title'>{project.title}</h1>
       <div className='chart-content'>
+      <div className='chart-container'>
         {project.chartData?.labels && (
-  <Scatter className='chart'
+  <Scatter 
     data={{
       labels: project.chartData.labels,
       datasets: [
@@ -85,10 +88,12 @@ const ProjectDetail = () => {
                     text:"F1"
                 }
             }
-        }
+        },
+        maintainAspectRatio: false,
     }}
   />
 )}
+      </div>
     {project.longdesc.map((text, index) => (
   <p className="desc"
     key={index}>{text}</p>
